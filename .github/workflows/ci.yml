@@ -1,0 +1,39 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  typecheck:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '26'
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm typecheck
+
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '26'
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm test
+        env:
+          # The E2E smoke test expects Chrome at a macOS path and a running dev server.
+          npm_config_filter: '!@nc/e2e'

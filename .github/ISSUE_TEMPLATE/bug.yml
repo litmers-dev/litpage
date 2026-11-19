@@ -1,0 +1,36 @@
+name: Bug report
+description: Report a reproducible problem in Litpage.
+body:
+  - type: textarea
+    id: steps-to-reproduce
+    attributes:
+      label: Steps to reproduce
+      description: List the steps that reproduce the problem.
+    validations:
+      required: true
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: Expected behavior
+      description: What did you expect to happen?
+  - type: textarea
+    id: actual-behavior
+    attributes:
+      label: Actual behavior
+      description: What happened instead?
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Include your Node.js version, operating system, and browser version if relevant.
+      placeholder: |
+        Node.js
+        Operating system
+        Browser
+  - type: textarea
+    id: screenshots-or-logs
+    attributes:
+      label: Screenshots or logs
+      description: Attach screenshots or paste relevant logs if you have them. Remove credentials and personal information before sharing.

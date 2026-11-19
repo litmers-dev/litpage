@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Report a bug
+    url: https://github.com/litmers-dev/litpage/issues/new?template=bug.yml
+    about: Use the bug form to share steps to reproduce the problem.
+  - name: Share a feature idea
+    url: https://github.com/litmers-dev/litpage/issues/new?template=feature.yml
+    about: Use the feature form for ideas. Litpage is a research and demonstration project, and GitHub Discussions is disabled.
+  - name: Report a security vulnerability
+    url: https://github.com/litmers-dev/litpage/blob/main/SECURITY.md
+    about: Follow the security policy to submit a private report.
