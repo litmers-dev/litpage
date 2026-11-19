@@ -1,0 +1,26 @@
+name: Feature request
+description: Discuss a feature or larger change before starting work.
+body:
+  - type: input
+    id: proposal-summary
+    attributes:
+      label: Proposal summary
+      description: Briefly describe what you would like to change.
+    validations:
+      required: true
+  - type: textarea
+    id: problem-or-user-story
+    attributes:
+      label: Problem or user story
+      description: Who needs this and what are they trying to do?
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives-considered
+    attributes:
+      label: Alternatives considered
+      description: Share any workarounds or other approaches you considered.
+  - type: markdown
+    attributes:
+      value: |
+        Large features proceed only after discussion and agreement on scope with the maintainers.

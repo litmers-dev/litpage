@@ -284,8 +284,8 @@ research and demonstration project and is provided as is.
 
 ## Contributing
 
-Issues and pull requests are welcome. Please run `pnpm typecheck` and `pnpm test` before opening a pull request, and
-add or update an end-to-end script when you change behavior in the app.
+Issues and pull requests are welcome. Please open an issue before starting a feature or a large change.
+See [CONTRIBUTING.md](CONTRIBUTING.md) for development and pull request guidelines.
 
 ## License
 
